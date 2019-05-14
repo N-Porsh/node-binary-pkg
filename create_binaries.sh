@@ -33,12 +33,14 @@ printf "Config:\n$CONFIG\n\n"
 echo "Delete old binaries from '${SAVE_DIR}' folder"
 rm -rf ${SAVE_DIR}
 
+echo -e "\nInstalling project dependencies..."
+npm install
+
 echo "Building executable binaries..."
 
 if [[ ! -d "$SAVE_DIR" ]]; then
   mkdir -m 755 ${SAVE_DIR}
 fi
-
 
 NPM_VERSION=$(npm -v | cut -c1-3) # get npm version
 if [[ ${NPM_VERSION} > 5.2 ]]; then

@@ -1,6 +1,8 @@
 {
     "name": "binary-creation-demo",
     "version": "1.0.0",
+    "author": "Nikita Porshnjakov",
+    "main": "index.js",
     "bin": "index.js",
     "scripts": {
         "start": "node index.js",
@@ -8,5 +10,8 @@
     },
     "pkg": {
         "assets": "config/*"
+    },
+    "devDependencies": {
+        "pkg": "^4.3.7"
     }
 }

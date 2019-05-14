@@ -9,4 +9,5 @@ Check out [Pkg](https://www.npmjs.com/package/pkg) for documentation.
 
 ##### Other:
 * **create_binary.sh** script for generating binaries
-* external config capability - by default once binaries generated config files are locked within   
+* external config capability - by default once binaries generated config files are locked within binary, so there's no ability to modify config,
+**config** module makes it possible by reading from **external_config** folder.
