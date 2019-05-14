@@ -1,0 +1,12 @@
+{
+    "name": "binary-creation-demo",
+    "version": "1.0.0",
+    "bin": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "create_binaries": "bash create_binaries.sh"
+    },
+    "pkg": {
+        "assets": "config/*"
+    }
+}
